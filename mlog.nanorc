@@ -20,17 +20,17 @@ color bold,brightcyan "([[:blank:]]|^)end$"
 color bold,brightcyan "([[:blank:]]|^)jump[[:blank:]]"
 
 # Pink statements #
-color pink "([[:blank:]]|^)printflush[[:blank:]][A-Za-z0-9]+"
-color pink "([[:blank:]]|^)drawflush[[:blank:]][A-Za-z0-9]+"
-color pink "([[:blank:]]|^)sensor[[:blank:]][A-Za-z0-9]+"
-color pink "([[:blank:]]|^)getlink[[:blank:]][A-Za-z0-9]+"
+color pink "([[:blank:]]|^)printflush[[:blank:]][A-Za-z0-9_]+"
+color pink "([[:blank:]]|^)drawflush[[:blank:]][A-Za-z0-9_]+"
+color pink "([[:blank:]]|^)sensor[[:blank:]][A-Za-z0-9_]+"
+color pink "([[:blank:]]|^)getlink[[:blank:]][A-Za-z0-9_]+"
 color pink "([[:blank:]]|^)radar[[:blank:]]"
 color pink "([[:blank:]]|^)control[[:blank:]]"
 
 # Latte statements #
-color latte "([[:blank:]]|^)read[[:blank:]][A-Za-z0-9]+"
+color latte "([[:blank:]]|^)read[[:blank:]][A-Za-z0-9_]+"
 color latte "([[:blank:]]|^)draw[[:blank:]][A-Za-z]+"
-color latte "([[:blank:]]|^)write[[:blank:]][A-Za-z0-9]+"
+color latte "([[:blank:]]|^)write[[:blank:]][A-Za-z0-9_]+"
 color latte "([[:blank:]]|^)print[[:blank:]]"
 
 # Peach statements #
