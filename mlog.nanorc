@@ -10,28 +10,28 @@ color bold,mint "^[A-Za-z_]+\:$"
 
 ## Instructions statements #
 # Blue statements #
-color bold,blue "[[:blank:]]op[[:blank:]][a-z]+[[:blank:]]"
-color bold,blue "[[:blank:]]set[[:blank:]]"
-color bold,blue "[[:blank:]]wait[[:blank:]]"
-color bold,blue "[[:blank:]]lookup[[:blank:]]"
+color bold,blue "op[[:blank:]][a-z]+[[:blank:]]"
+color bold,blue "set[[:blank:]]"
+color bold,blue "wait[[:blank:]]"
+color bold,blue "lookup[[:blank:]]"
 
 # Cyan statements #
-color bold,brightcyan "[[:blank:]]end$"
-color bold,brightcyan "[[:blank:]]jump[[:blank:]]"
+color bold,brightcyan "end$"
+color bold,brightcyan "jump[[:blank:]]"
 
 # Pink statements #
-color pink "[[:blank:]]printflush[[:blank:]][A-Za-z0-9]+"
-color pink "[[:blank:]]drawflush[[:blank:]][A-Za-z0-9]+"
-color pink "[[:blank:]]sensor[[:blank:]][A-Za-z0-9]+"
-color pink "[[:blank:]]getlink[[:blank:]][A-Za-z0-9]+"
-color pink "[[:blank:]]radar[[:blank:]]"
-color pink "[[:blank:]]control[[:blank:]]"
+color pink "printflush[[:blank:]][A-Za-z0-9]+"
+color pink "drawflush[[:blank:]][A-Za-z0-9]+"
+color pink "sensor[[:blank:]][A-Za-z0-9]+"
+color pink "getlink[[:blank:]][A-Za-z0-9]+"
+color pink "radar[[:blank:]]"
+color pink "control[[:blank:]]"
 
 # Latte statements #
-color latte "[[:blank:]]read[[:blank:]][A-Za-z0-9]+"
-color latte "[[:blank:]]draw[[:blank:]][A-Za-z]+"
-color latte "[[:blank:]]write[[:blank:]][A-Za-z0-9]+"
-color latte "[[:blank:]]print[[:blank:]]"
+color latte "read[[:blank:]][A-Za-z0-9]+"
+color latte "draw[[:blank:]][A-Za-z]+"
+color latte "write[[:blank:]][A-Za-z0-9]+"
+color latte "print[[:blank:]]"
 
 # Number constants #
 color bold,red "\<([0-9]+|[0-9]+\.[0-9]+)\>"
