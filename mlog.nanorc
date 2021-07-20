@@ -1,0 +1,49 @@
+## This file is licensed under the GPLv3
+## https://github.com/Zirkorn1/mlog-syntax-hil/blob/main/LICENSE/
+
+## Syntax hilite for mlog mindustry logic #
+syntax mlog "\.mlog$"
+comment "#"
+
+## Function declarations #
+color bold,mint "^[A-Za-z_]+\:$"
+
+## Instructions statements #
+# Blue statements #
+color bold,blue "[[:blank:]]op[[:blank:]][a-z]+[[:blank:]]"
+color bold,blue "[[:blank:]]set[[:blank:]]"
+color bold,blue "[[:blank:]]wait[[:blank:]]"
+color bold,blue "[[:blank:]]lookup[[:blank:]]"
+
+# Cyan statements #
+color bold,brightcyan "[[:blank:]]end$"
+color bold,brightcyan "[[:blank:]]jump[[:blank:]]"
+
+# Pink statements #
+color pink "[[:blank:]]printflush[[:blank:]][A-Za-z0-9]+"
+color pink "[[:blank:]]drawflush[[:blank:]][A-Za-z0-9]+"
+color pink "[[:blank:]]sensor[[:blank:]][A-Za-z0-9]+"
+color pink "[[:blank:]]getlink[[:blank:]][A-Za-z0-9]+"
+color pink "[[:blank:]]radar[[:blank:]]"
+color pink "[[:blank:]]control[[:blank:]]"
+
+# Latte statements #
+color latte "[[:blank:]]read[[:blank:]][A-Za-z0-9]+"
+color latte "[[:blank:]]draw[[:blank:]][A-Za-z]+"
+color latte "[[:blank:]]write[[:blank:]][A-Za-z0-9]+"
+color latte "[[:blank:]]print[[:blank:]]"
+
+# Number constants #
+color bold,red "\<([0-9]+|[0-9]+\.[0-9]+)\>"
+
+## The "@" thingies #
+color italic,peach "@[A-Za-z]+"
+
+## Strings #
+color bold,yellow ""(\\.|[^"])*""
+
+## Comments #
+color brightblack "(^|[[:blank:]])#.*"
+
+## Whitespace
+color ,cyan "[[:space:]]+$"
